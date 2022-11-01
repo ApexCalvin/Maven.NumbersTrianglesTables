@@ -3,53 +3,50 @@ package io.zipcoder.microlabs.mastering_loops;
 
 public class NumberUtilities {
     public static String getEvenNumbers(int start, int stop) {
-        String evenNums = "";
+        StringBuilder sb = new StringBuilder();
         for ( int i = start ; i < stop ; i++) {
             if (i % 2 == 0) {
-                evenNums += Integer.toString(i);
+                sb.append(i);
             }
         }
-        return null; //evenNums
+        return sb.toString();
     }
 
     public static String getOddNumbers(int start, int stop) {
-        String oddNums = "";
+        StringBuilder sb = new StringBuilder();
         for ( int i = start ; i < stop ; i++) {
-            if (i % 2 == 1) {
-                oddNums += Integer.toString(i);
+            if (i % 2 == 1) { //!=0
+                sb.append(i);
             }
         }
-        return null; //oddNums
+        return sb.toString();
     }
 
-    public static String getSquareNumbers(int start, int stop, int step) {
+    public static String getRange(int stop) {
 
-        return null;
-    }
-
-    public static String getRange(int start) {
-        String range = "";
-        for (int i = 0; i < start ; i++) {
-            range += Integer.toString(i);
-        }
-        return null; //range
+        return getRange(0, stop, 1);
     }
 
     public static String getRange(int start, int stop) {
-        String range = "";
-        for (int i = start; i < stop ; i++) {
-            range += Integer.toString(i);
-        }
-        return null;
+
+        return getRange(start, stop, 1);
     }
 
     public static String getRange(int start, int stop, int step) {
 
-        return null;
+        return getExponentiations(start, stop, step, 1);
+    }
+
+    public static String getSquareNumbers(int start, int stop, int step) {
+
+        return getExponentiations(start, stop, step, 2);
     }
 
     public static String getExponentiations(int start, int stop, int step, int exponent) {
-
-        return null;
+        StringBuilder sb = new StringBuilder();
+        for(int i=start; i < stop; i += step) {
+            sb.append((int)Math.pow(i, exponent));
+        }
+        return sb.toString();
     }
 }

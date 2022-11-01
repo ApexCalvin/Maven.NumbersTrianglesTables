@@ -53,7 +53,7 @@ public class TriangleUtilitiesTest {
                 "*******\n" +
                 "********\n" +
                 "*********\n";
-        String actual = TriangleUtilities.getLargeTriangle();
+        String actual = TriangleUtilities.getLargeTriangle(5);
         Assert.assertEquals(expected, actual);
     }
 
@@ -64,7 +64,7 @@ public class TriangleUtilitiesTest {
                         "**\n" +
                         "***\n" +
                         "****\n";
-        String actual = TriangleUtilities.getSmallTriangle();
+        String actual = TriangleUtilities.getSmallTriangle(10);
         Assert.assertEquals(expected, actual);
     }
 }

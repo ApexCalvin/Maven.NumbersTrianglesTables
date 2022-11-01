@@ -1,26 +1,27 @@
 package io.zipcoder.microlabs.mastering_loops;
 
 public class TableUtilities {
-    public static String getSmallMultiplicationTable() {
-        int mult;
+    //String.format()
+    public static String getMultiplicationTable(int tableSize) {
+        int holder;
+        //tableSize = 10;
         String multistr ="";
-        for (int i =1; i <= 10; i++) { //vertical
-            for (int j=1; j <= 10; j++) { //horizontal
-                mult = i * j;
-                multistr += String.format("%3d |",mult);
+        for (int i =1; i <= tableSize ; i++) { //vertical
+            for (int j=1; j <= tableSize ; j++) { //horizontal
+                holder = i * j;
+                multistr += String.format("%3d |", holder);
             }
             multistr += "\n";
         }
         return multistr;
     }
+    public static String getSmallMultiplicationTable() {
+
+        return getMultiplicationTable(5);
+    }
 
     public static String getLargeMultiplicationTable() {
 
-        return null;
-    }
-
-    public static String getMultiplicationTable(int tableSize) {
-
-        return null;
+        return getMultiplicationTable(10);
     }
 }
