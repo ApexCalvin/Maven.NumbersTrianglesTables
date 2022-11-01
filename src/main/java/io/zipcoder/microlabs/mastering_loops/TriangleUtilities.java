@@ -5,18 +5,12 @@ public class TriangleUtilities {
     public static String getTriangle(int numberOfRows) {
         String triangle = "";
 
-        for (int i = 0; i < numberOfRows; i++) {
-            for (int j = 0; j < numberOfRows; j++) {
-                if (j > i) {
-                    triangle = triangle + "\n";
-                    break;
-                } else {
-                    triangle = triangle + "*";
-                }
+        for (int i = 1; i <= numberOfRows-1; i++) {
+            for (int j = 1; j <= i; j++) {
+                triangle += "*";
             }
+            triangle += "\n";
         }
-        triangle = triangle + "\n";
-        System.out.println(triangle);
         return triangle;
     }
 

@@ -43,17 +43,6 @@ public class NumberUtilitiesTest {
         Assert.assertEquals(expected, actual);
     }
 
-
-
-
-
-
-
-
-
-
-
-
     @Test
     public void testGetRange1B() {
         // : Given
@@ -67,7 +56,6 @@ public class NumberUtilitiesTest {
         // : Then
         Assert.assertEquals(expected, actual);
     }
-
 
     @Test
     public void testGetRange2B() {
@@ -83,7 +71,6 @@ public class NumberUtilitiesTest {
         Assert.assertEquals(expected, actual);
     }
 
-
     @Test
     public void testGetRange3B() {
         // : Given
@@ -97,18 +84,6 @@ public class NumberUtilitiesTest {
         // : Then
         Assert.assertEquals(expected, actual);
     }
-
-
-
-
-
-
-
-
-
-
-
-
 
     @Test
     public void testGetRange1C() {
@@ -125,7 +100,6 @@ public class NumberUtilitiesTest {
         Assert.assertEquals(expected, actual);
     }
 
-
     @Test
     public void testGetRange2C() {
         // : Given
@@ -141,7 +115,6 @@ public class NumberUtilitiesTest {
         Assert.assertEquals(expected, actual);
     }
 
-
     @Test
     public void testGetRange3C() {
         // : Given
@@ -156,19 +129,6 @@ public class NumberUtilitiesTest {
         // : Then
         Assert.assertEquals(expected, actual);
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     @Test
     public void testGetEvenNumbers() {
@@ -199,8 +159,6 @@ public class NumberUtilitiesTest {
         Assert.assertEquals(expected, actual);
     }
 
-
-
     @Test
     public void testGetSquareNumbers() {
         // : Given
@@ -215,7 +173,6 @@ public class NumberUtilitiesTest {
         // : Then
         Assert.assertEquals(expected, actual);
     }
-
 
     @Test
     public void testGetExponentiationNumbers() {

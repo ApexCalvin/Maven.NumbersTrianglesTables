@@ -6,32 +6,31 @@ public class NumberUtilities {
         String evenNums = "";
         for ( int i = start ; i < stop ; i++) {
             if (i % 2 == 0) {
-                //evenNums += i.toString;
+                evenNums += Integer.toString(i);
             }
         }
         return null; //evenNums
     }
 
-
     public static String getOddNumbers(int start, int stop) {
         String oddNums = "";
         for ( int i = start ; i < stop ; i++) {
             if (i % 2 == 1) {
-                //oddNums += i.toString;
+                oddNums += Integer.toString(i);
             }
         }
         return null; //oddNums
     }
 
-
     public static String getSquareNumbers(int start, int stop, int step) {
+
         return null;
     }
 
     public static String getRange(int start) {
         String range = "";
         for (int i = 0; i < start ; i++) {
-            //range += i.toString;
+            range += Integer.toString(i);
         }
         return null; //range
     }
@@ -39,17 +38,15 @@ public class NumberUtilities {
     public static String getRange(int start, int stop) {
         String range = "";
         for (int i = start; i < stop ; i++) {
-            //range += i.toString;
+            range += Integer.toString(i);
         }
         return null;
     }
-
 
     public static String getRange(int start, int stop, int step) {
 
         return null;
     }
-
 
     public static String getExponentiations(int start, int stop, int step, int exponent) {
 

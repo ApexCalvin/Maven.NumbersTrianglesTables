@@ -14,7 +14,6 @@ public class TriangleUtilitiesTest {
         Assert.assertEquals(expected, actual);
     }
 
-
     @Test
     public void getTriangleTest1() {
         String expected =
@@ -57,7 +56,6 @@ public class TriangleUtilitiesTest {
         String actual = TriangleUtilities.getLargeTriangle();
         Assert.assertEquals(expected, actual);
     }
-
 
     @Test
     public void testGetSmallTriangle() {
